@@ -5,13 +5,276 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
+  }
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+  .top-navigation ul li a.active {
+  color: #737373;;
 }
+  .top-navigation ul li >a:hover{
+    color: #434343;
+  }
+
+
+  .teammate-social-icons > div:hover{
+    background-color: #969696;
+    cursor: pointer;
+  }
+
+
+
+  .footer-contacts ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+  }
+
+.social-icons > div:hover  {
+  cursor: pointer;
+  color: #fff; 
+}
+
+.social-icons > div:hover .icon {
+  background-color: #fff;}
+
+}
+
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+.header-content{
+      box-shadow: 0px 4px 4px rgb(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+}
+
+.top-navigation ul{
+  display: none;
+}
+
+.section-info{
+  padding: 80px 30px 60px;
+}
+
+.subtext{
+    font-family: Arial;
+    color: #404040;
+    padding-inline: 40px;
+}
+
+.portfolio-list{
+  flex-direction: column;
+}
+.portfolio-item{
+  flex-direction: row;
+}
+.portfolio-item:nth-child(2){
+  order: 3;
+}
+
+.teammates-list-wrapper{
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.teammate-img-wrapper{
+  height: 65%;
+  width: 100%;
+}
+.teammate-data{
+  align-items: center;
+}
+.teammates-list::before , .teammates-list::after {
+  display: none;
+}
+
+.teammate-info{
+  text-align: center;
+}
+
+footer .social-icons span {
+  display: none;
+}
+footer .social-icons div{
+  width: 100%;
+}
+footer .social-icons .icon{
+  background-color: #fff;
+} 
+
+.footer-contacts{
+  flex-wrap: wrap;
+}
+
+.address{
+  flex: 1;
+}
+
+.address p {
+  padding-inline:103px
+}
+.footer-contacts ul li a{
+  color: #fff;
+}
+
+.footer-contacts > div{
+  width: 50%;
+}
+
+.footer-contacts .phones{
+  width: 100%;
+}
+
+}
+
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+
+
+.logo span{
+text-transform: capitalize;
+}
+
+.header-content{
+      box-shadow: 0px 4px 4px rgb(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    width: 100%;
+}
+
+.top-navigation ul{
+  display: none;
+}
+
+.top-navigation{
+  height: 100%;
+  align-items: center;
+}
+.top-navigation .trigram{
+  height: 100%;
+  width: 16px;
+}
+
+
+
+.section-info{
+      padding: 40px 16px;
+    width: 100%;
+}
+
+.content h1 {
+      font-size: 64px;
+    font-family: Arial;
+    padding: 0;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -3px;
+    text-transform: capitalize;
+}
+
+.content h2 {
+      font-size: 32px;
+    font-weight: 600;
+    padding: 0;
+}
+
+
+
+.portfolio-list{
+      justify-content: center;
+    flex-direction: column;
+    padding-inline: 16px;
+}
+
+.portfolio-img-wrapper{
+  flex: 1;
+}
+
+.teammates-list::before,
+.teammates-list::after{
+  display: none;
+}
+
+.portfolio-img-wrapper img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.portfolio-item-info{
+      align-items: center;
+    flex: 1;
+}
+.portfolio-item-info .item-description{
+      text-align: center;
+    }
+
+.teammates-content , .section-info{
+  width: 100%;
+}
+
+.content p.subtext{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 0;
+    color: #404040;
+}
+
+.teammates-content .section-info .subtext{
+  width: 100%;
+    color: #969696;
+}
+.teammates-list-wrapper{
+      flex-direction: column;
+    align-items: center;
+}
+.teammate{
+  padding: 10px;
+  flex-direction: row;
+  width: 100%;
+  border: #969696 1px solid;
+}
+.teammate-img-wrapper{
+  flex: 1;
+}
+.teammate-data{
+      flex: 1;
+    justify-content: center;
+}
+.teammate-info .teammate-role{
+  color: #969696;
+}
+footer .social-icons{
+  flex-direction: column;
+}
+footer .social-icons .icon{
+  background-color: #fff;
+  font-weight: bold;
+}
+.footer-contacts{
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons  span{
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.footer-footer{
+  border: none;
+}
+}
+
+
